@@ -1,0 +1,10 @@
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\bin\Any CPU\Debug\netcoreapp2.0\WebApi.deps.json
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\bin\Any CPU\Debug\netcoreapp2.0\WebApi.runtimeconfig.json
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\bin\Any CPU\Debug\netcoreapp2.0\WebApi.runtimeconfig.dev.json
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\bin\Any CPU\Debug\netcoreapp2.0\WebApi.dll
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\bin\Any CPU\Debug\netcoreapp2.0\WebApi.pdb
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\obj\Any CPU\Debug\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\obj\Any CPU\Debug\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\obj\Any CPU\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\obj\Any CPU\Debug\netcoreapp2.0\WebApi.dll
+C:\Users\yesmancan\Documents\MEGAsync\Odevler\2. Sınıf Bilgisayar Programcılığı 2.Dönem\Proje\DotNetWebApi\obj\Any CPU\Debug\netcoreapp2.0\WebApi.pdb
