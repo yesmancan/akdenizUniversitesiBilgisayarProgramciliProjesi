@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{hero.name}} - Detay Sayfası
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Kapat</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button (click)="UpdateHero(hero)">
+        <span ion-text color="primary" showWhen="ios">Düzenle</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card padding>
+    <ion-img width="100%" height="100%" class="full-image" [src]="hero.imglink" *ngIf="hero.imglink;else notLoadImg"></ion-img>
+    <h1 text-center padding-top>{{hero.name}}</h1>
+    <h2 text-center padding-top>Gerçek Adı : {{hero.realName}}</h2>
+    <h2 text-center padding *ngIf="hero.citizenship">Ülkesi : {{hero.citizenship}}</h2>
+    <div text-center>
+      <h2>Kahraman Güçleri :</h2>
+      <p [innerText]='hero.power'></p>
+    </div>
+    <div text-center padding>
+      <h2>Hikayesi</h2>
+      <p>{{hero.abilities}}</p>
+    </div>
+  </ion-card>
+</ion-content>
+<ng-template #notLoadImg>
+  <div style='position: relative;'>
+    <img alt="Resim Bulunamadı..." title="Resim Bulunamadı..." class="img-responsive" src="../../assets/imgs/hero-img-not-found.jpg">
+    <h2 style="
+  position:  absolute;
+  left:  0;
+  top: -2px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.49);
+  padding: 13%;
+  right: 0;
+  text-align:  center;
+  bottom: -2px;
+">Süper Kahramanımızın Resmi Bulunamadı...</h2>
+  </div>
+</ng-template>

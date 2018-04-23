@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid *ngFor="let hero of heroes;index as index">
+    <ion-row>
+      <ion-col col-2 text-left>
+        <span ion-button>{{ index+1 }}</span>
+      </ion-col>
+      <ion-col col-8 text-center (click)="openModal({char:hero})">
+        <button ion-button col-12>{{ hero.name }}</button>
+      </ion-col>
+      <ion-col col-2 text-right>
+        <button (click)='deleteHero(hero.id)' ion-button>
+          <ion-icon name="trash"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

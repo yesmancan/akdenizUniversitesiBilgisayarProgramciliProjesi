@@ -1,0 +1,21 @@
+{
+  "name": "akdenizuniversitesiproje",
+  "version": "1.3.4",
+  "description": "Akdeniz Üniversitesi Bilgisayar Proğramcığı 2. Sınıf 2. Dönem Proje Angular 5 , ASPNETCORE EF-CORE , IONIC 3 Web Uygulaması",
+  "main": "index.js",
+  "scripts": {
+    "serve:ionic": "cd ionicProje && yarn run serve",
+    "serve:angular": "cd NgApp && yarn run serve "
+  },
+  "keywords": [
+    "Angular",
+    "5",
+    "ASPNETCORE",
+    "EF-CORE",
+    "i",
+    "IONIC",
+    "3"
+  ],
+  "author": "CAN AKBURU",
+  "license": "MIT"
+}
