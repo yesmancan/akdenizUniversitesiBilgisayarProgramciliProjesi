@@ -1,0 +1,15 @@
+<hr>
+<div class="container">
+  <div *ngIf="messageService.messages.length">
+    <br>
+    <h2 style="text-align: center;">
+      <span style="float: left;">Log Kayıtları</span>
+      <button class="btn btn-outline-danger waves-effect" style="float: right;" (click)="messageService.clear()">Log Önbelleğini Sil</button>
+    </h2>
+    <br>
+    <br>
+    <br>
+    <button *ngFor='let message of messageService.messages;i as index;' class="btn btn-outline-info waves-effect" style="display: block;">{{ i }} {{message}}</button>
+
+  </div>
+</div>

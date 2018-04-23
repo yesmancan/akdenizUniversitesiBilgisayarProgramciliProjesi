@@ -1,0 +1,43 @@
+﻿<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+        <p class="h4 text-center mb-4">{{hero.name}}</p>
+        <!-- Default input img -->
+        <img class="img-thumbnail" [src]="hero.imglink" *ngIf="hero.imglink" />
+        <div color="dark">Kahramanın Resmini Seçiniz : </div>
+        <br/>
+        <input type="file" name="imglink" (change)='imgOnLoad($event)' />
+        <br/>
+        <br>
+        <!-- Default input password -->
+        <label color="primary" for="name" floating>Kahramanın Adı :
+          <input name="name" [(ngModel)]='this.hero.name' [value]='this.hero.name' required />
+        </label>
+        <br>
+        <label color="primary" for="realname" floating>Kahramanın Gerçek Adı : </label>
+        <input name="realname" [(ngModel)]='this.hero.realname' [value]='this.hero.realname' />
+
+        <label color="primary" for="citizenship" floating>Kahramanın Ülkesi : </label>
+        <input name="citizenship" [(ngModel)]='this.hero.citizenship' [value]='this.hero.citizenship' required />
+        <br>
+        <label color="primary" for="power" floating>Kahramanın Güçleri : </label>
+        <textarea name="power" [(ngModel)]='this.hero.power' [value]='this.hero.power' cols="15" rows="5"></textarea>
+        <br>
+
+        <label color="primary" for="abilities" floating>Kahramanın Hikayesi : </label>
+        <textarea name="abilities" class="form-control" [(ngModel)]='this.hero.abilities' [value]='this.hero.abilities' cols="15"
+          rows="5"></textarea>
+        <br>
+
+        <div *ngIf="!checkUpdateOrAdd">
+          <button color="primary" class="btn btn-indigo" (click)='AddHero(hero)'>{{hero.name}} Kahramanını Ekle</button>
+        </div>
+        <br>
+        <div *ngIf="checkUpdateOrAdd">
+          <button class="btn btn-indigo" (click)='updateHero(hero)'>{{hero.name}} Kahramanını Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

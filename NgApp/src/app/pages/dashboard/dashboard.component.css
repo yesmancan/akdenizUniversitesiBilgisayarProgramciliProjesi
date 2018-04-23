@@ -1,0 +1,17 @@
+.text-center {
+  text-align: center !important;
+}
+
+.btn {
+  padding: 10px;
+  width: 100%;
+}
+
+img.img-responsive {
+  width: 100%;
+}
+
+.img-container {
+  height: 420px;
+  background-color: #444;
+}

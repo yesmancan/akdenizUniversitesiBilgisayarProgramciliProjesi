@@ -1,0 +1,35 @@
+﻿<div *ngIf="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        <br>
+      </div>
+      <div class="col-md-3">
+        <img src="{{hero.imglink}}" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+      </div>
+      <div class="col-md-7">
+        <div class="col-md-12">
+          <h2>
+            <strong>Kahraman Adı : </strong> {{hero.name}}
+          </h2>
+          <p>
+            <strong>Kahraman Gerçek Adı : </strong> {{hero.realName}}
+          </p>
+          <p>
+            <strong>Kahraman Ülkesi : </strong> {{hero.citizenship}}
+          </p>
+          <p>
+            <strong>Kahraman Güçleri : </strong> {{hero.power}}
+          </p>
+          <p>
+            <strong>Kahraman Hikayesi : </strong> {{hero.abilities}}
+          </p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-outline-warning waves-effect" (click)="goBack()">Geri Git</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="wrap">
+  <div class="wrap-container">
+    <h1>Arama Sonucu</h1>
+    <input #searchBox class="search-input " id="search-box" (keypress)="search(searchBox.value)" type="text" placeholder="ara"
+    />
+    <i class="fa fa-times-circle" aria-hidden="true" (click)="close()"></i>
+    <ul class='search-input'>
+      <li *ngFor="let hero of heroes$" [routerLink]="['/pages/Heroes/Detail/',hero.id,hero.name]">
+        <div class="backgroundImg" [ngStyle]="{'background-image': 'url(' + hero.imglink + ')'}">
+          <span>{{ hero.title }}</span>
+        </div>
+        <a href="javascript:;">{{hero.name}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  const 
+</script>

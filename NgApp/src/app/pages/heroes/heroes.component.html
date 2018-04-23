@@ -1,0 +1,30 @@
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 mb-30" *ngFor="let hero of heroes">
+      <!--Card-->
+      <div class="card">
+        <!--Card image-->
+        <div class="view hm-white-slight waves-light img-container" mdbRippleRadius>
+          <div [ngStyle]="{'background-image': 'url(' + hero.imglink + ')','background-position': 'center center','background-repeat': 'no-repeat','background-size': 'cover','height': '100%'}">
+            <span>{{ hero.title }}</span>
+          </div>
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <h4 class="card-title text-center">{{hero.name}}</h4>
+          <a class="btn btn-outline-primary" [routerLink]="['/pages/Heroes/Detail/',hero.id,hero.name]" mdbRippleRadius>Kahraman Detayına Git</a>
+          <button class="btn btn-outline-default" [routerLink]="['/pages/Heroes/Update/',hero.id,hero.name]" *ngIf="ckeck">Kahramanı Güncelle</button>
+          <button class="btn btn-outline-danger" (click)="deleteHero(hero.id)" *ngIf="ckeck">Kahramanı Sil</button>
+        </div>
+      </div>
+      <!--/.Card-->
+    </div>
+  </div>
+</div>

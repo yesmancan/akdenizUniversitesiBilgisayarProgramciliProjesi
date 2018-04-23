@@ -1,0 +1,36 @@
+.avatar img {
+  height: 45px;
+  padding: 0;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.navbar .nav-flex-icons,
+.navbar.double-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.navbar .nav-item.avatar {
+  padding: 0;
+}
+
+.navbar .nav-item .nav-link {
+  display: block;
+}
+
+.dropdown-item.waves-light {
+  padding: 5px 10px;
+  margin: 0 5px;
+  display: block;
+  width: calc(100% - 10px);
+  border-radius: 3px;
+}

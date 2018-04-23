@@ -1,0 +1,73 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo ">
+
+  <!-- Navbar brand -->
+  <logo mdbRippleRadius>
+    <button type="button" class="btn btn-outline-info waves-effect" style="padding:  0.4em;">
+      <a class="navbar-brand" [routerLink]="['/Dashboard']" style="margin:  0;width:  35px;height:  30px;line-height:  20px;">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+      </a>
+    </button>
+  </logo>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLinkActive]="['link-active']" mdbRippleRadius>
+        <button type="button" class="btn btn-outline-info waves-effect" style="padding:  0.4em;">
+          <a class="nav-link waves-light" [routerLink]="['/Dashboard']" style="padding:  0.4em;">Dashboard</a>
+        </button>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']" mdbRippleRadius>
+        <button type="button" class="btn btn-outline-info waves-effect" style="padding:  0.4em;">
+          <a class="nav-link waves-light" [routerLink]="['/pages/Heroes']" style="padding:  0.4em;">Kahraman</a>
+        </button>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['link-active']" mdbRippleRadius *ngIf="ckeck">
+        <button type="button" class="btn btn-outline-info waves-effect" style="padding:  0.4em;">
+          <a class="nav-link waves-light" [routerLink]="['/pages/Hero/Add']" style="padding:  0.4em;">Kahraman Ekle</a>
+        </button>
+      </li>
+    </ul>
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <!-- Search form -->
+      <li class="nav-item avatar btn-group dropdown" dropdown>
+        <a class="nav-link waves-effect waves-light" (click)="openSearch()">
+          <button type="button" class="btn btn-outline-info waves-effect">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+          </button>
+        </a>
+      </li>
+      <li class="nav-item avatar btn-group dropdown" dropdown *ngIf="!ckeck">
+        <a dropdownToggle mdbRippleRadius class="nav-link  waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-outline-danger waves-effect" [routerLink]="['/login']">Giriş Yap</button>
+        </a>
+      </li>
+      <li class="nav-item avatar btn-group dropdown" dropdown *ngIf="ckeck">
+        <a dropdownToggle mdbRippleRadius class="nav-link  waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="img-fluid z-depth-0 btn btn-outline-danger">
+        </a>
+
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" href="#" mdbRippleRadius>
+            <span>OOO</span>
+          </a>
+          <a class="dropdown-item waves-light" href="#" mdbRippleRadius>Bişeyler</a>
+          <a class="dropdown-item waves-light" href="#" mdbRippleRadius>Daha Fazla Bişeyler</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" href="#" mdbRippleRadius (click)="logout()">Çıkış Yap</a>
+        </div>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+<app-template [heroes]="heroes$" *ngIf="SearchInfo"></app-template>
